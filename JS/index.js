@@ -57,7 +57,14 @@ function getAkanName(){
 
     console.log("Akan name is "+ akanName);
 
+    let span = document.getElementById("akanName");
 
+ if(span == null){
+        alert("Akan Name text missing")
+        return;
+    }
+
+    span.textContent = akanName;
 }
 
 
