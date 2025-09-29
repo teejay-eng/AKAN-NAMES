@@ -39,7 +39,24 @@ function getAkanName(){
     const yy = year.substring(2,4);
 
     const dayOfWeek = calcuateDay(cc, yy, month,day);
-    console.log(" Day os wek is " + dayOfWeek);
+
+
+    //0-6
+
+    console.log(" Day of wek is " + dayOfWeek);
+
+    const maleNames = [Kwasi,kwadwo,Kwabena,Kwaku,Yaw,Kofi,Kwame];
+    const femaleNames = [Akosua,Adwoa,Abena,Akua,Yaa,Afua,Ama];
+
+    let akanName;
+    if(gender === "male"){
+        akanName = maleNames[dayOfWeek];
+    }else{
+        akanName = femaleNames[dayOfWeek];
+    }
+
+    console.log("Akan name is "+ akanName);
+
 
 }
 
