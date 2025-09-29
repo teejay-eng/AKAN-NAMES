@@ -11,12 +11,17 @@ function getAkanName(){
     const validation = validateDate(dateValue);
 
    
-    // const gender = document.querySelector('input[name="gender"]:checked').value;
+    const genderInput = document.querySelector('input[name="gender"]:checked');
 
-    // validateDate(date);
+     if(genderInput == null){
+        alert("Please select gender")
+        return;
+    }
+
+    const gender = genderInput.value;
 
 
-    // console.log(date);
+    console.log(gender);
 
 }
 
