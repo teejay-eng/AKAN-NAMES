@@ -8,7 +8,22 @@ function getAkanName(){
     }
 
     const dateValue = dateInput.value;
-    const validation = validateDate(dateValue);
+
+    const year = dateValue.substring(0, 4);
+    const month = dateValue.substring(5, 7);
+    const day = dateValue.substring(8, 10);
+
+      if(day >= 1 && day <= 31){
+        console.log("day is okay")
+    }else{
+        alert("provide a valid day")
+    }
+    
+    if(month>=1 && month<=12){
+        console.log("month is correct")
+    } else{
+        alert("provide a valid month")
+    }
 
    
     const genderInput = document.querySelector('input[name="gender"]:checked');
@@ -20,30 +35,21 @@ function getAkanName(){
 
     const gender = genderInput.value;
 
+    const cc = year.substring(0,2);
+    const yy = year.substring(2,4);
 
-    console.log(gender);
+    const dayOfWeek = calcuateDay(cc, yy, month,day);
+    console.log(" Day os wek is " + dayOfWeek);
 
 }
 
-function validateDate(date){
-    // 2025-09-21
 
-    const year = date.substring(0, 4);
-    const month = date.substring(5, 7);
-    const day = date.substring(8, 10);
 
-    console.log(year);
-    console.log(month);
-    console.log(day)
-
-    if(day >= 1 && day <= 31){
-        console.log("day is okay")
-    }else{
-        alert("provide a valid day")
-    }
-    
-    if(month>=1 && month<=12){
-        console.log("month is correct")
-    } else{alert("provide a valid month")}
-
+function calcuateDay(cc, yy, mm, dd ){
+    const block1 = (cc*4) - (2 * cc) - 1;
+    const block2 = (45 * yy);
+    const block3 = (1026 * (mm + 1));
+    const block4 = block1 + block2 + block3 + dd;
+    const block5 = block4 % 7;
+    return block5;
 }
