@@ -45,8 +45,8 @@ function getAkanName(){
 
     console.log(" Day of wek is " + dayOfWeek);
 
-    const maleNames = [Kwasi,kwadwo,Kwabena,Kwaku,Yaw,Kofi,Kwame];
-    const femaleNames = [Akosua,Adwoa,Abena,Akua,Yaa,Afua,Ama];
+    const maleNames = ["Kwasi","kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+    const femaleNames = ["Akosua","Adwoa","Abena","Akua","Yaa","Afua","Ama"];
 
     let akanName;
     if(gender === "male"){
