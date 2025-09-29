@@ -7,5 +7,13 @@ I got to use
 - calender- which you just need to click and you have your day filled in 
 - radio button- able to select the gender and ensure that only one gender is selected at a time 
 - Button -majorly during the getting your akan name 
-- 
+
+# PROJECT STUCTURE
+- css file
+- html file
+- image
+- java script
+
+
+
 
