@@ -11,10 +11,30 @@
         <hi>AKAN NAME GENERATOR</hi>
         <P>Enter your birth date and your gender to discover your Akan name </P>
     </main>
-    
-    <div id="akan form ">
+
+    <section id="akanform">
+        <div class="form-group">
+            <div id="birthdate">date of birth</div>
+             <input type="date" id="birthdate" required />
+            
+        </div>
+        <div class="form-group">
+            <h2>Gender</h2>
+          <label><input type="radio" name="gender" value="male" required /> ♂️ Male</label>
+          <label><input type="radio" name="gender" value="female" required /> ♀️ Female</label>
         
-    </div>
+        </div>
+        <button onclick="submit">🔍 Get Akan Name</button>
+        <button onclick="submit">your Akan name is</button>
+    
+    </section>
+    <div id="result" class="hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+
+        
+    
 </body>
 
 </html>
