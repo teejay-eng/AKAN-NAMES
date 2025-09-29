@@ -31,4 +31,14 @@ function validateDate(date){
     console.log(month);
     console.log(day)
 
+    if(day >= 1 && day <= 31){
+        console.log("day is okay")
+    }else{
+        alert("provide a valid day")
+    }
+    
+    if(month>=1 && month<=12){
+        console.log("month is correct")
+    } else{alert("provide a valid month")}
+
 }
