@@ -1,0 +1,124 @@
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(to bottom right, rgb(126, 192, 236), rgb(223, 241, 247));
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+main {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+main h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+main p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+#akanform {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.form-group {
+  margin: 20px 0;
+  text-align: left;
+}
+
+#akanform label {
+  display: block;
+  margin: 10px 0;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#akanform input[type="date"],
+#akanform input[type="radio"] {
+  margin-top: 5px;
+}
+
+#akanform input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#akanform h2 {
+  margin-bottom: 10px;
+}
+
+#akanform img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#result {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #eafaf1;
+  color: #2d6a4f;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #b7e4c7;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  main h1 {
+    font-size: 2rem;
+  }
+
+  #akanform {
+    padding: 20px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
